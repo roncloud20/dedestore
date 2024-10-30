@@ -12,11 +12,13 @@ import {
 }
 from 'mdb-react-ui-kit';
 import Header from '../Components/Header';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const [msg, setMsg] = useState();
+    const navigate = useNavigate();
 
     async function login(){
         let userInfo = {email, password}
@@ -35,6 +37,7 @@ function Login() {
         } else {
             localStorage.setItem('userInfo', JSON.stringify(result));
             setMsg("Login Successful");
+            navigate('/dashboard');
             console.log(result);
         }
     }
@@ -51,7 +54,7 @@ function Login() {
             </MDBCol>
 
             <MDBCol md='8'>
-                <h1 classNAme="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</h1>
+                <h1 className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Login</h1>
 
                 <MDBCardBody>
                 <span className='badge bg-warning mb-2'>{msg}</span>

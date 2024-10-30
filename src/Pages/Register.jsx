@@ -105,8 +105,14 @@ export default function Register() {
                 setRes("");
                 console.log(result.errors);
             } else {
-                setErr("");
                 setRes("Registration Successful");
+                setErr("");
+                setFirstname("");
+                setLastname("");
+                setEmail("");
+                setPhone("");
+                setPassword("");
+                setCpassword("");
                 console.log(result);
             }
         } catch(errors) {
