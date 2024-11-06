@@ -143,7 +143,7 @@ export default function Register() {
                                 </div>
                                 
                                 <div className="d-flex flex-column">
-                                    <MDBInput label='Lastname' id='form1' type='text' className='w-100' name='lastname' value={lastname} onChange={(e) => setLastname(e.target.value)} required/>
+                                    <MDBInput label='Lastname' id='form1' type='text' className='w-100' name='lastname' value={lastname} onChange={(e) => setLastname(e.target.value)} required />
                                     <span className='badge bg-danger mb-2'>{lastnameErr}</span>
                                 </div>
                             </div>

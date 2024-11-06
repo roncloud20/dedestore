@@ -27,7 +27,7 @@ export default function Header() {
               (loginUser['user_role'] === 'vendor') ?
                 <>
                   <Nav.Link as={Link} to="/dashboard">Dashboard</Nav.Link>
-                  <Nav.Link as={Link} to="/dashboard">Add Product</Nav.Link>
+                  <Nav.Link as={Link} to="/addproduct">Add Product</Nav.Link>
                   <Nav.Link as={Link} to="/dashboard">View Product</Nav.Link>
                   <Nav.Link as={Link} to="/logout">Logout</Nav.Link>
                 </>

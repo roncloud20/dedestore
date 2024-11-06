@@ -5,6 +5,8 @@ import Register from "./Pages/Register";
 import Dashboard from "./Pages/Dashboard";
 import Logout from "./Pages/Logout";
 import RouteProtection from "./Components/RouteProtection";
+import AddProduct from "./Pages/AddProduct";
+import VendorRouteProtection from "./Components/VendorRouteProtection";
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
           <Route path="/logout" element={<Logout/>}/>
           <Route path="/register" element={<Register/>}/>
           <Route path="/dashboard" element={<RouteProtection cmp={Dashboard}/>}/>
+          <Route path="/addproduct" element={<VendorRouteProtection cmp={AddProduct}/>}/>
+
         </Routes>
       </BrowserRouter>
     </>
