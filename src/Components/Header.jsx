@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
   let loginUser = JSON.parse(localStorage.getItem('userInfo'));
-  console.log(loginUser);
   return (
     <Navbar expand="lg" className="bg-body-tertiary" sticky='top'>
       <Container fluid>
